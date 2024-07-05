@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/agenda.png" alt="Agenda de contatos">
+                <h1>Agenda de contatos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#agenda">Agenda</a>
+                        <a href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container" id="agenda">
+        <div class="agenda-form">
+            <div id="form">
+                <form id="formulario">
+                    <div class="nome">
+                        <img src="./images/contato.png" alt="contato">
+                        
+                        <input type="text" id="nome" placeholder="Nome completo" required/>
+                    </div>
+                    <div class="tel">
+                        <img src="./images/telefone.png" alt="telefone">
+                        <input type="number" id="telephone" placeholder="Telefone" required >
+                    </div>
+                    <div class="email">
+                        <img src="./images/email.png" alt="email">
+                        <input type="email" id="e-mail" placeholder="E-mail" required/>
+                    </div>
+                    <button type="submit" class="botao">Criar contato</button>
+                </form>
+            </div>
+            <div class="contato">
+                <table id="tabela" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>E-mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Contatos cadastrados</td>
+                            <td id="contatos-salvos">---</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="contatos">
+        <div>
+            <div class="contatos-mthods">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" title="">
+                                <img src="./images/e-mail.png" alt="email">
+                            </a>
+                            <a href="https://github.com/GuiChiste"  target="_blank">
+                                <img src="./images/github.png" alt="github">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
